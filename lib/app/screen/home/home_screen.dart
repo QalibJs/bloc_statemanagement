@@ -1,6 +1,7 @@
+import 'package:bloc_workout/app/widgets/home/home_float_ation_button.dart';
+
 import '../../widgets/home/home_app_bar_widget.dart';
 import '../../widgets/home/home_body_widget.dart';
-import '../../widgets/home/home_float_action_button.dart';
 import '../../../constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +10,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TrainingBloc trainingBloc = context.watch<TrainingBloc>();
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(

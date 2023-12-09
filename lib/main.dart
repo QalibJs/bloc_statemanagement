@@ -1,5 +1,7 @@
+
+import 'package:bloc_workout/bloc/training_bloc.dart';
+
 import 'app/screen/home/home_screen.dart';
-import 'bloc/bloc/training_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

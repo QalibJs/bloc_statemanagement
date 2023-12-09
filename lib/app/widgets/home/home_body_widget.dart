@@ -1,4 +1,4 @@
-import 'package:bloc_workout/bloc/bloc/training_bloc.dart';
+import 'package:bloc_workout/bloc/training_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../constants/app_box_decoration.dart';
