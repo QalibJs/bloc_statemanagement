@@ -10,7 +10,6 @@ class HomeBodyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TrainingBloc trainingBloc = context.watch<TrainingBloc>();
     return Center(
       child: Container(
         width: 160,
@@ -24,8 +23,17 @@ class HomeBodyWidget extends StatelessWidget {
                   "${state.number}",
                   style: AppTextstyle.centerText(false),
                 );
+              } else if (state is TrainingDecrement) {
+                return Text(
+                  "${state.number}",
+                  style: AppTextstyle.centerText(false),
+                );
               }
               return const SizedBox.shrink();
+              // return Text(
+              //   "0",
+              //   style: AppTextstyle.centerText(false),
+              // );
             },
           ),
         ),

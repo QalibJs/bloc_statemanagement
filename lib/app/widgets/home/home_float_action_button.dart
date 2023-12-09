@@ -16,7 +16,7 @@ class HomeFloatActionButton extends StatelessWidget {
           children: [
             FloatingActionButton(
               onPressed: () {
-                trainingBloc.add(TrainingEvent());
+                trainingBloc.add(IncrementEvent());
               },
               child: Text(
                 "+",
@@ -24,7 +24,9 @@ class HomeFloatActionButton extends StatelessWidget {
               ),
             ),
             FloatingActionButton(
-              onPressed: () {},
+              onPressed: () {
+                trainingBloc.add(DecrementEvent());
+              },
               child: Text(
                 "-",
                 style: AppTextstyle.centerText(true),
